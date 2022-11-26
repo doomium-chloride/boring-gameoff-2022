@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Actors/Drill.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Game/Game.gd" type="Script" id=2]
+
+[node name="Game" type="Node2D"]
+script = ExtResource( 2 )
+
+[node name="Drill" parent="." instance=ExtResource( 1 )]
+position = Vector2( 512.78, 269.104 )
+scale = Vector2( 0.5, 0.5 )
+z_index = 5
+
+[node name="StoneContainer" type="Node" parent="."]
